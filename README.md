@@ -1,3 +1,10 @@
+####Tutorials
+
+```url
+https://developers.sap.com/group.sap-s4hana-consume-remote-services.html
+https://developers.sap.com/group.cap-application-full-stack.html
+```
+
 1. Initialize Project
 
 ```shell
@@ -23,5 +30,16 @@ function myHandler(req: Request) { }
 
 #Import types through the cds facade class only:The cds facade object provides access to all CAP Node.js APIs. https://cap.cloud.sap/docs/node.js/cds-facade
 import { ... } from '@sap/cds'
+```
 
+4. Add test cases
+
+```shell
+npm add -D axios chai@4 chai-as-promised@7.1.2 chai-subset jest
+```
+
+5. Add HANA
+
+```shell
+cds add hana --for production
 ```
