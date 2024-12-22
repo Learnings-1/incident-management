@@ -42,4 +42,21 @@ npm add -D axios chai@4 chai-as-promised@7.1.2 chai-subset jest
 
 ```shell
 cds add hana --for production
+
+# check env for production
+cds env requires -4 production
+
+```
+
+6. Add Authorization
+
+```shell
+cds add xsuaa --for production
+
+```
+
+7. Add HTML5 with deploy configurations
+
+```shell
+cds add html5-repo
 ```
