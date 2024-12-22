@@ -1,25 +1,27 @@
-# Getting Started
+1. Initialize Project
 
-Welcome to your new project.
+```shell
+cds init incident-management
+```
 
-It contains these folders and files, following our recommended project layout:
+2. use cds watch because it detects cds-tsx watch under the hood after detecting tsconfig.json.
+   Can also use cds-ts but tsx is better choice as it faster
 
-File or Folder | Purpose
----------|----------
-`app/` | content for UI frontends goes here
-`db/` | your domain models and data go here
-`srv/` | your service models and code go here
-`package.json` | project metadata and configuration
-`readme.md` | this getting started guide
+```shell
+cds watch
+```
 
+3. npm add @cap-js/cds-types.contains all TypeScript declarations for @sap/cds APIs. These declarations are used automatically when you write TypeScript files, but also enable IntelliSense and type checking for standard JavaScript development in Visual Studio Code. Just add the @cap-js/cds-types package to your project as follows
 
-## Next Steps
+```shell
+npm add @cap-js/cds-types
+#Do npm install after adding dependecies
+# Use the Typescript declarations like this: https://cap.cloud.sap/docs/node.js/typescript#enable-typescript-support
+import { Request } from '@sap/cds'
 
-- Open a new terminal and run `cds watch`
-- (in VS Code simply choose _**Terminal** > Run Task > cds watch_)
-- Start adding content, for example, a [db/schema.cds](db/schema.cds).
+function myHandler(req: Request) { }
 
+#Import types through the cds facade class only:The cds facade object provides access to all CAP Node.js APIs. https://cap.cloud.sap/docs/node.js/cds-facade
+import { ... } from '@sap/cds'
 
-## Learn More
-
-Learn more at https://cap.cloud.sap/docs/get-started/.
+```
