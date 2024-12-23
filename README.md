@@ -60,3 +60,9 @@ cds add xsuaa --for production
 ```shell
 cds add html5-repo
 ```
+
+8. Run Build for production
+
+```shell
+cds build --production
+```
