@@ -1,34 +1,19 @@
-// {
-//   "compilerOptions": {
-//     "target": "ESNext",
-//     "module": "NodeNext",
-//     "moduleResolution": "NodeNext",
-//     "esModuleInterop": true,
-//     "forceConsistentCasingInFileNames": true,
-//     "strict": true,
-//     "skipLibCheck": true,
-//     "rootDir": "./srv",
-//     "outDir": "./gen/srv",
-//     "sourceMap": true,
-//     "allowJs": true,
-//     "paths": {
-//       "#cds-models/*": ["./@cds-models/*"]
-//     }
-//   }
-// }
-
 {
   "compilerOptions": {
     "target": "es6",
-    "module": "ES2022",
-    "outDir": "./gen/srv",
+    "module": "commonjs",
+    "outDir": "./gen/srv/srv",
     "rootDir": "./srv",
+    "baseUrl": "./",
     "moduleResolution": "node",
-    "esModuleInterop": true,
     "skipLibCheck": true,
+    "preserveConstEnums": true,
+    "sourceMap": false,
+    "allowJs": true,
     "strict": true,
-    "resolveJsonModule": true
+    "strictNullChecks": false,
+    "strictPropertyInitialization": false,
+    "esModuleInterop": true
   },
-  "include": ["./srv/**/*"],
-  "exclude": ["node_modules"]
+  "include": ["./srv/**/*"]
 }
