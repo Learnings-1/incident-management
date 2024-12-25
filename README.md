@@ -5,7 +5,9 @@
 
 # Heplful Links
 
--[CAP Typescript + Fiori Typescript + live reload Initial app setup](https://community.sap.com/t5/technology-blogs-by-members/cap-typescript-fiori-typescript-live-reload-initial-app-setup/ba-p/13556415) -[CDS Typer](https://cap.cloud.sap/docs/tools/cds-typer#integrate-into-your-build-process)
+-[CAP Typescript + Fiori Typescript + live reload Initial app setup](https://community.sap.com/t5/technology-blogs-by-members/cap-typescript-fiori-typescript-live-reload-initial-app-setup/ba-p/13556415)
+
+-[CDS Typer](https://cap.cloud.sap/docs/tools/cds-typer#integrate-into-your-build-process)
 
 ---
 
