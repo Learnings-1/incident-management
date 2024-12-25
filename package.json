@@ -6,10 +6,14 @@
   "license": "UNLICENSED",
   "private": true,
   "dependencies": {
-    "@sap/cds": "^8",
-    "express": "^4",
     "@cap-js/hana": "^1",
-    "@sap/xssec": "^4"
+    "@sap-cloud-sdk/connectivity": "^3.25.0",
+    "@sap-cloud-sdk/http-client": "^3.25.0",
+    "@sap-cloud-sdk/resilience": "^3.25.0",
+    "@sap-cloud-sdk/util": "^3.25.0",
+    "@sap/cds": "^8",
+    "@sap/xssec": "^4",
+    "express": "^4"
   },
   "devDependencies": {
     "@cap-js/cds-typer": ">=0.1",
@@ -64,7 +68,17 @@
         "db": "hana",
         "auth": "xsuaa"
       },
-      "html5-repo": true
+      "html5-repo": true,
+      "API_BUSINESS_PARTNER": {
+        "kind": "odata-v2",
+        "model": "srv/external/API_BUSINESS_PARTNER",
+        "[production]": {
+          "credentials": {
+            "destination": "incidents-api-access",
+            "path": "/sap/opu/odata/sap/API_BUSINESS_PARTNER"
+          }
+        }
+      }
     },
     "sql": {
       "native_hana_associations": false

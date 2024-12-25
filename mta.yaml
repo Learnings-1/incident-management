@@ -147,3 +147,10 @@ resources:
           name: srv-api # must be used in xs-app.json as well
           url: ~{srv-url}
           forwardAuthToken: true
+  - name: incidents-api-access
+    type: org.cloudfoundry.managed-service  
+    parameters:
+     path: ./bupa.json
+     service: s4-hana-cloud
+     service-plan: api-access
+     system-name: JI4

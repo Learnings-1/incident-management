@@ -127,7 +127,15 @@ cds add workzone-standard
 
 ---
 
-## 10. Run Build and Deploy for Production
+## 10. Import Business Partner EDMX
+
+To build the project for production, run the following command:
+
+```shell
+cds import API_BUSINESS_PARTNER.edmx --as cds
+```
+
+## 11. Run Build and Deploy for Production
 
 To build the project for production, run the following command:
 
