@@ -67,7 +67,15 @@ npm add -D axios chai@4 chai-as-promised@7.1.2 chai-subset jest
 
 ---
 
-## 5. Add HANA
+## 5. Add MTA
+
+```shell
+cds add mta
+```
+
+---
+
+## 6. Add HANA
 
 To add HANA support for production, run the following command:
 
@@ -83,7 +91,7 @@ cds env requires -4 production
 
 ---
 
-## 6. Add Authorization
+## 7. Add Authorization
 
 To add authorization support for production, run the following command:
 
@@ -93,7 +101,7 @@ cds add xsuaa --for production
 
 ---
 
-## 7. Add HTML5 with Deploy Configurations
+## 8. Add HTML5 with Deploy Configurations
 
 To add HTML5 with deploy configurations, run the following command:
 
@@ -103,10 +111,22 @@ cds add html5-repo
 
 ---
 
-## 8. Run Build for Production
+## 9. Add Workzone
+
+To add Workzone , run the following command:
+
+```shell
+cds add workzone-standard
+```
+
+---
+
+## 10. Run Build and Deploy for Production
 
 To build the project for production, run the following command:
 
 ```shell
 cds build --production
+mbt build
+cf deploy mta_archives/incident-management_1.0.0.mtar
 ```
