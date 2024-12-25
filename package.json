@@ -66,33 +66,6 @@
       },
       "html5-repo": true
     },
-    "build": {
-      "target": "gen",
-      "tasks": [
-        {
-          "for": "hana",
-          "src": "db",
-          "options": {
-            "model": [
-              "db",
-              "srv",
-              "app"
-            ]
-          }
-        },
-        {
-          "for": "nodejs",
-          "src": "srv",
-          "options": {
-            "model": [
-              "db",
-              "srv",
-              "app"
-            ]
-          }
-        }
-      ]
-    },
     "sql": {
       "native_hana_associations": false
     }
